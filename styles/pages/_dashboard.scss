@@ -1,0 +1,264 @@
+.dashboard {
+    padding: 20px 10px;
+    .filter {
+        &-box {
+            background-color: $light-gray;
+            margin: 20px 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        &-txt {
+            font-family: 'Open Sans', sans-serif;
+            color: $dark-gray;
+            font-weight: 100;
+            width: 10%;
+            @media screen and (max-width: 767px) {
+                // width: 100%;
+            }
+        }
+        &-inf {
+            display: flex;
+            flex-direction: row; // justify-content: center;
+            align-items: center;
+            width: 90%;
+            p {
+                color: $dark-gray;
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        &-select {
+            width: 30%;
+        }
+    }
+    .search-box {
+        @extend .filter-box;
+        margin-bottom: 0;
+        background-color: $white;
+        align-items: center;
+        border-bottom: 1px solid $border-color;
+        border-top: 1px solid $border-color;
+        .filter-txt {
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .filter-inf {
+            width: 37%;
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        .form-control {
+            margin-bottom: 0;
+        }
+        .gray-btn {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+    }
+    .btn-box {
+        margin-left: 20px;
+        .btn {
+            margin-right: 5px;
+        }
+    }
+    .green-btn,
+    .gray-btn,
+    .black-btn,
+    .yellow-btn,
+    .red-btn {
+        margin-left: 3px;
+    }
+    .page-box {
+        margin-right: 30px;
+    }
+    .table-btn {
+        display: flex;
+        border: none;
+        &:first-child {
+            border-top: 0
+        }
+    }
+    .table-striped>tbody>tr {
+        border-bottom: 1px solid #ddd;
+    }
+    .general-table {
+        .table>thead>tr>th {
+            vertical-align: middle;
+            padding: 0 20px;
+        }
+    }
+    
+    .table-chart{
+        height: auto;
+        overflow: scroll;
+    }
+    svg:not(:root) {
+        max-height: 300px;
+    }
+    .chart-box {
+        border: 1px solid #d4d4d4;
+        margin: 30px 0 10px;
+        padding: 15px;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .flex-row {
+            justify-content: flex-start;
+            align-items: center;
+        }
+        @media screen and (max-width:767px) {
+            height: auto;
+            .flex-row{
+                flex-direction: row;
+            }
+            
+        }
+    }
+
+    .chart-title {
+        font-size: 24px;
+        color: $dark-blue;
+        font-weight: 100;
+    }
+    .second-chart {
+        font-size: 18px;
+        color: $dark-gray;
+        font-weight: 100;
+    }
+    .chart-space {
+        margin: 20px 0;
+            // height: 301px;
+    }
+    .inf-box {
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 5px;
+        padding: 10px 0;
+        .blue {
+            background-color: $blue;
+            border-radius: 100%;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+        .red {
+            @extend .blue;
+            background-color: $light-red;
+        }
+        .orange {
+            @extend .blue;
+            background-color: $orange;
+        }
+        .inf-p {
+            color: $dark-blue;
+            font-size: 14px;
+            @media screen and (max-width:767px){
+                font-size: 10px;
+            }
+        }
+    }
+    .small-txt {
+        font-size: 14px;
+        font-weight: 100;
+        color: $light-gray;
+        padding-top: 5px;
+    }
+    .inf-row {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: 1px solid $border-color;
+        border-top: 1px solid $border-color;
+        @media screen and (max-width:767px){
+            padding: 10px 0; 
+            p{
+                font-size: 12px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .checked-box {
+        width: 12%;
+    }
+    .checked {
+        width: 18px;
+        height: 18px;
+        border: 2px solid $blue;
+        margin-right: 5px;
+        border-radius: 6px;
+        @media screen and (max-width:767px){
+            width: 13px;
+            height: 13px;
+            border-radius: 2px;
+        }
+    }
+    .inf-text {
+        width: 60%;
+        p {
+            font-size: 16px;
+            color: $dark-blue;
+        }
+    }
+    .check-img{
+        width:  18px;
+        height: 18px;
+        @media screen and (max-width:767px){
+            width: 13px;
+            height: 13px;
+        }
+    }
+    .action-inf {
+        width: 28%;
+        opacity: .5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+// Modal
+.modal-box {
+    padding: 1.5em;
+    border-radius: 3px;
+    box-shadow: 0 0 1em #d4d4d4;
+    .row-modal {
+        border-bottom: 1px solid $border-color;
+        padding: 5px 0;
+    }
+    .simple-input {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 5px 0;
+        border-bottom: 1px solid $border-color;
+    }
+    .table-modal {
+        margin: 10px 0;
+    }
+    .bottom-box {
+        padding: 10px 0;
+        th {
+            border: none;
+            color: $black;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        td {
+            border: none;
+        }
+        .table-input {
+            margin: 0;
+            height: 35px;
+            text-align: center;
+            border: 1px solid $dark-gray;
+        }
+    }
+}

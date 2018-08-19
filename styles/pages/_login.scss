@@ -1,0 +1,98 @@
+.login {
+    width: 100%; // min-height: 100vh;
+    margin-top: 87px;
+    background: linear-gradient(to top, #002632 17%, #eec45b 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    &-content {
+        min-height: 100vh;
+        margin: 20px 0;
+        padding-top: 15%;
+    }
+    .footer {
+        background: transparent;
+    }
+    &-title {
+        font-family: 'Roboto';
+        color: $white;
+        padding: 15px 0;
+        font-size: 4rem;
+        border-bottom: 1px solid $white;
+    }
+    .second-title {
+        color: $dark-gray;
+        padding: 10px 0;
+        font-weight: 100;
+        font-size: 3.5rem;
+        width: 90%;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .light-text {
+        color: #f8f9fa;
+        font-weight: 100;
+        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 10px;
+    }
+    .text-box {
+        padding-right: 4rem;
+    }
+    .login-box {
+        position: relative;
+        background: #fff;
+        padding: 2.5em 1.5em 1.5em;
+        border-radius: 3px;
+        box-shadow: 0 0 3em #898989;
+        margin: auto;
+        @media screen and (min-width: 990px) {
+            width: 400px;
+        }
+        .h4 {
+            color: $dark-blue;
+        }
+        .second-txt {
+            color: #696969;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $border-color;
+        }
+        .forgot-txt {
+            text-align: center;
+            p {
+                color: $blue;
+                font-size: 12px;
+            }
+        }
+        #login-error {
+            visibility: hidden;
+        }
+        .checkbox {
+            margin-bottom: 0;
+            label {
+                color: $dark-gray;
+            }
+        }
+        .small,
+        small {
+            font-size: 73%;
+            color: $dark-gray;
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    .login-box {
+        margin: auto;
+    }
+    .login {
+        margin-top: 54px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .login-content {
+        padding-top: 27%;
+    }
+}

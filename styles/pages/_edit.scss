@@ -1,0 +1,51 @@
+.edit {
+    &-box{
+        border: 1px solid $border-color;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .title-page{
+        margin-bottom: 30px;
+    }
+    .btn-bottom {
+        text-align: right;
+    }
+    .table>tbody>tr>td,
+    .table>tbody>tr>th {
+        vertical-align: middle;
+    }
+    .td {
+        padding: 5px 0;
+    }
+    .general-table {
+        margin: 20px 0;
+        border: 1px solid #dee2e6;
+        padding: 1rem;
+    }
+    .table-btn {
+        .btn {
+            background-color: transparent;
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+    .move-img {
+        width: 10px;
+        height: 10px;
+        margin-left: 3px;
+    }
+}
+
+.edit-box{
+    padding: 20px 0;
+}
+
+.edit-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

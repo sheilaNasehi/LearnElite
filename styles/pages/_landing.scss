@@ -1,0 +1,94 @@
+.landing{
+    .main-page{
+        margin-top: 87px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:767px){
+            margin-top: 54px;
+        }
+    }
+    .video-position{
+        padding: 5px;
+        .video-react-controls-enabled{
+            padding-top: 45% !important;
+            box-shadow: 0em 0em 3em 0em rgba(0, 0, 0, 0.88);
+        }
+    }
+    .title-page{
+        text-align: center;
+        border: none;
+    }
+    .aws-sld__bullets .aws-sld__bullets--active {
+        background: #f1c659;
+    }
+    .aws-sld__bullets button{
+        background: $dark-blue;
+    }
+    .flex-row{
+        margin: 20px 0;
+    }
+    .chart-img{
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .chart-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        p{
+            color: $dark-blue;
+            font-style: 16px;
+            text-align: center;
+        }
+        @media screen and (max-width:767px){
+            margin-bottom: 60px;
+        }
+    }
+    .contact-form{
+        margin: 20px auto;
+        padding: 20px;
+        background: linear-gradient(to bottom, #d3bb75bd 17%, #eec45b24 100%);
+        @media screen and (min-width:767px){
+            width: 400px;
+        }
+    }
+    .control-label {
+        color: #002531;
+    }
+    &-box{
+            // background: rgba(241, 198, 89, 0.16);
+            background: linear-gradient(to bottom, #00263285 17%, #eec45b82 100%);
+            padding: 130px 50px;
+        &:last-child {
+            @media screen and (max-width:767px){
+                padding: 20px;
+            }
+            padding: 80px 50px;
+            // background: transparent;
+            border-bottom: none;
+            background-color: #a9ad9d;
+            background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        }
+    }
+
+.mission{
+    width: 100%;
+    padding: 70px;
+    text-align: center;
+    color: #002531;
+    margin-bottom: 130px;
+    h2{
+        border-bottom: 3px solid #04405379;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+        
+    }
+p{
+    font-size: 16px;
+}
+  
+}
+
+} // end

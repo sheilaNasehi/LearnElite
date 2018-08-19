@@ -1,0 +1,72 @@
+.sidebar {
+    // padding: 5rem 0;
+    width: 220px;
+    min-height: 100%;
+    background: $dark-blue;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    .plus {
+            width: 17px;
+    }
+    .side-li {
+        width: 100%;
+        padding: 8px 40px;
+        a {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            color: $gold;
+            font-size: 16px;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .data-txt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 73%;
+        margin: 30px auto 10px;
+        p{
+            font-weight: 100;
+        }
+    }
+    .edit-img{
+        margin-left: 5px;
+    }
+}
+.logo-sidebar {
+    width: 150px;
+    margin-bottom: 5rem;
+}
+
+.logo-dashboard {
+    @extend .img-cover;
+    background-image: url(/assets/img/home.png);
+    background-size: 80%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+
+.logo-profile {
+    @extend .img-cover;
+    @extend .logo-dashboard;
+    background-image: url(/assets/img/users.png);
+    background-size: 85%;
+}
+.logo-payment {
+    @extend .img-cover;
+    @extend .logo-dashboard;
+    background-image: url(/assets/img/payment.png);
+    background-size: 95%;
+}
